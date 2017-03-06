@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Charity</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<!-- topbar with logo -->
+		<div class="topBar">
+			<div class="topBar__hamburger">
+				<a onclick="toggle_visibility('navBar__hidden');"><i class="fa fa-bars"></i></a>
+			</div>
+			<div class="topBar__logo topBar__logo--dark">
+				<span>Mercy</span>
+				<img src="images/logo.png" alt="Mercy Heart logo">
+				<span>Heart</span>
+			</div>
+			<div class="topBar__socialMedia">
+				<i class="fa fa-facebook" aria-hidden="true"></i> 
+				<i class="fa fa-twitter" aria-hidden="true"></i> 
+				<i class="fa fa-google" aria-hidden="true"></i> 
+			</div>
+		</div>
+
+		<!-- navigation -->
+		<nav class="navBar" id="navBar__hidden">
+			<ul class="navBar__links">
+				<li class="navBar__links--current"><a href="#/">Main</a></li>
+				<li><a href="#/">Causes</a></li>
+				<li><a href="#/">Events</a></li>
+				<li><a href="#/">Blog</a></li>
+				<li><a href="#/">Pages</a></li>
+				<li><a href="#/">Contact</a></li>
+			</ul>
+			<div class="navBar__close">
+				<a onclick="toggle_visibility('navBar__hidden');"><i class="fa fa-close fa-lg" aria-hidden="true"></i></a>
+			</div>
+		</nav>
+
+		<!-- hero image -->
+		<section class="hero">
+			<div class="hero__txt">
+				<h2>Help Needy People</h2>
+				<h1><span class="hero__txt--red">Charity</span> is <span class="hero__txt--thin">willingly given</span> <span>from heart</span></h1>
+				<button class="button button--white" type="button">Join us</button>
+			</div>
+			<div class="hero__slider">
+				<img src="images/hrline.png" alt="slider line">
+				<img src="images/hrline.png" alt="slider line">
+				<img src="images/hrline.png" alt="slider line">
+			</div>
+		</section>
+	</header>
+
+	<!--main content-->
+	<main>
+		<!-- contribute -->
+		<section class="contribute">
+			<div class="contribute__column contribute__column--blue">
+				<h2>Donator</h2>
+				<img src="images/hrline.png" alt="Horizontal line"> 
+				<p>Do good by stealth, and blush to find it fame</p>
+				<button class="button button--white" type="button">Donate us</button>
+			</div>
+			<div class="contribute__column contribute__column--purple">
+				<h2>Volunteer</h2>
+				<img src="images/hrline.png" alt="Horizontal line"> 
+				<p>Give the gift of volunteering to those who needed</p>
+				<button class="button button--white" type="button">Donate us</button>
+			</div>
+			<div class="contribute__column contribute__column--red">
+				<h2>Adopter</h2>
+				<img src="images/hrline.png" alt="Horizontal line"> 
+				<p>Adoption is willingly given from your heart</p>
+				<button class="button button--white" type="button">Adopt a Kid</button>
+			</div>
+		</section>
+
+		<!-- urgent causes -->
+		<section class="urgentCauses">
+			<div class="urgentCauses__wrapper">
+				<div class="urgentCauses__top">
+					<div class="urgentCauses__title">
+						<h2><span class="title__bold">Most</span> Urgent Cause</h2>
+					</div>
+					<div class="urgentCauses__graphic">
+						<div class="urgentCauses__graphicContent">
+							<p><span>95</span><span>%</span></p>
+							<p>donated</p>
+						</div>
+					</div>
+					<div class="urgentCauses__stats">
+						<p><span class="title__bold">$80 000</span> Needed</p>
+						<p><span class="title__bold">$76 000</span> Gathered</p>
+						<p><span class="title__bold">$1220</span> Donators</p>
+					</div>
+				</div>
+				
+				<button class="button button--dark" type="button">View Details</button>
+				
+				<div class="urgentCauses__bottom">
+					<div class="urgentCauses__quote">
+						<div class="urgentCauses__blockquoteWrapper">
+							<blockquote>
+								Sed ut perspiciatis unde omste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam.
+							</blockquote>
+						</div>
+						<p><span>Lynda May</span>, Manager</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- recent causes -->
+		<section class="recentCauses">
+			<div class="innerWrapper">
+				<h2><span>Recent</span> Causes</h2>
+				<ul class="recentCauses__filter">
+					<li><a href="#/">All</a></li>
+					<li><a href="#/">Donate</a></li>
+					<li><a href="#/">Volunteer</a></li>
+					<li><a href="#/">Adopting</a></li>
+					<li><a href="#/">Charity</a></li>
+				</ul>
+				<div class="gallery">
+					<!-- left arrow -->
+					<div class="recentCauses__arrowLeft" >
+						<img src="images/arrowleft-dark.png" alt="left arrow">
+					</div>
+					<div class="recentCauses__column">
+						<div class="recentCauses__columnImage"> 
+							<img src="images/water.jpg" alt="donate for water image">
+							<img class="recentCauses__columnStatus" src="images/statusbar1.jpg" alt="Status bar">
+							<h3>Donate for Water</h3>
+						</div>
+						<p>South Africa needs water</p>
+						<div class="recentCauses__columnText">
+							<div class="recentCauses__block recentCauses__block--large">
+								<p>$<span>52</span>k</p>
+								<p>gathered</p>
+							</div> 
+							<div class="recentCauses__block recentCauses__block--georgia">
+								<p>of</p>
+							</div>
+							<div class="recentCauses__block recentCauses__block--large">
+								<p>$<span>80</span>k</p>
+								<p>needed</p>
+							</div>
+						</div>
+						<button class="button button--dark" type="button">Donate</button>
+					</div>
+					<div class="recentCauses__column recentCauses__column--mid">
+						<div class="recentCauses__columnImage"> 
+							<img src="images/adoptgirl.jpg" alt="child adoption image"><img class="recentCauses__columnStatus" src="images/statusbar2.jpg" alt="Status bar">
+							<h3>Child Adoption</h3>
+						</div>
+						<p>Adopt a child from Asia</p>
+						<div class="recentCauses__columnText">
+							<div class="recentCauses__block recentCauses__block--large">
+								<p>$<span>29</span>k</p>
+								<p>gathered</p>
+							</div> 
+							<div class="recentCauses__block recentCauses__block--georgia">
+								<p>of</p>
+							</div>
+							<div class="recentCauses__block recentCauses__block--large">
+								<p>$<span>65</span>k</p>
+								<p>needed</p>
+							</div>
+						</div>
+						<button class="button button--dark" type="button">Donate</button>
+					</div>
+					<div class="recentCauses__column">
+						<div class="recentCauses__columnImage"> 
+							<img src="images/smallhands.jpg" alt="stop hunger image">
+							<img class="recentCauses__columnStatus" src="images/statusbar3.jpg" alt="Status bar">
+							<h3>Stop Hunger</h3>
+						</div>
+						<p>Save children from hunger</p>
+						<div class="recentCauses__columnText">
+							<div class="recentCauses__block recentCauses__block--large">
+								<p>$<span>28</span>k</p>
+								<p>gathered</p>
+							</div> 
+							<div class="recentCauses__block recentCauses__block--georgia">
+								<p>of</p>
+							</div>
+							<div class="recentCauses__block recentCauses__block--large">
+								<p>$<span>30</span>k</p>
+								<p>needed</p>
+							</div>
+						</div>
+						<button class="button button--dark" type="button">Donate</button>
+					</div>
+					<!-- right arrow -->
+					<div class="recentCauses__arrowRight">
+						<img src="images/arrowright-dark.png" alt="right arrow">
+					</div>
+				</div>
+				
+			</div><!-- end inner wrapper-->
+		</section>
+
+		<!-- slider -->
+		<section class="imageSlider">
+			<div class="imageSlider__wrapper">
+				<ul class="imageSlider__images">
+					<li><img src="images/slider1.jpg" alt""></li>
+					<li><img src="images/slider2.jpg" alt""></li>
+					<li><img src="images/slider3.jpg" alt""></li>
+					<li><img src="images/slider4.jpg" alt""></li>
+					<li><img src="images/slider5.jpg" alt""></li>
+					<li><img src="images/slider6.jpg" alt""></li>
+					<li><img src="images/slider7.jpg" alt""></li>
+					<li><img src="images/slider8.jpg" alt""></li>
+				</ul>
+			</div>
+			<div class="imageSlider__arrows">
+				<div class="imageSlider__arrowsLeft">
+					<img src="images/arrowleft.png" alt="Left arrow">
+				</div>
+				<div class="imageSlider__arrowsRight">
+					<img src="images/rightarrow.png" alt="Right arrow">
+				</div>
+			</div>
+		</section>
+
+		<!-- get this theme -->
+		<section class="getTheme">
+			<div class="innerWrapper">
+				<div class="getTheme__wrapper">
+					<div class="getTheme__text">
+						<p><span class="innerWrapper__span--red">Like this theme?</span> Get your copy of this great theme now!</p>
+					</div>
+					<div class="getTheme__button">
+						<button class="button button--dark">Purchase</button></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- our blog -->
+		<section class="ourBlog">
+			<div class="innerWrapper">
+				<h2><span>Our</span> Blog</h2>
+				<div class="ourBlog__gallery">
+					<div class="ourBlog__leftColumn">
+						<div class="ourBlog__post ourBlog__post--top">
+							<img src="images/03.jpg" alt="Statue">
+							<ul class="clearfix">
+								<li><i class="fa fa-clock-o"></i>Dec. 17</li>
+								<li><i class="fa fa-heart-o"></i>15 <span class="hidden">Likes</span></li>
+							</ul>
+						</div>
+						<div class="ourBlog__post ourBlog__post--top">
+							<img src="images/02.jpg" alt="Orphan">
+							<ul class="clearfix">
+								<li><i class="fa fa-clock-o"></i>Dec. 15</li>
+								<li><i class="fa fa-heart-o"></i>18 <span class="hidden">Likes</span></li>
+							</ul>
+						</div>
+						<div class="ourBlog__post ourBlog__post--bottom">
+							<img src="images/post3.jpg" alt="Child">
+							<ul class="clearfix">
+								<li><i class="fa fa-clock-o"></i>Dec. 8</li>
+								<li><i class="fa fa-heart-o"></i>26 <span class="hidden">Likes</span></li>
+							</ul>
+						</div>
+						<div class="ourBlog__post ourBlog__post--bottom">
+							<img src="images/post4.jpg" alt="Child">
+							<ul class="clearfix">
+								<li><i class="fa fa-clock-o"></i>Dec. 7</li>
+								<li><i class="fa fa-heart-o"></i>19 <span class="hidden">Likes</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="ourBlog__rightColumn">
+						<div class="ourBlog__post--featured">
+							<img src="images/postfeatured.jpg" alt="3 boys">
+							<ul class="clearfix">
+								<li><i class="fa fa-clock-o"></i>17 Dec '14</li>
+								<li><i class="fa fa-heart-o"></i>21 <span class="hidden">Likes</span></li>
+								<li><i class="fa fa-comment-o"></i>28 <span class="hidden">Comments</span></li>
+							</ul>
+							<div class="ourBlog__rightColumnText">
+								<h3>Lorem ipsum dolor</h3>
+								<h4>Adopting, Charity</h4>
+								<p>Sed ut perspiciatis unde omnis iste natus error ltem accusantum doloremque laudantium.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="button button--white" type="button">All Posts</button>
+		</section>
+
+		<!-- achievements -->
+		<section class="achievements clearfix">
+			<div class="achievements__column">
+				<img src="images/heart.png" alt="Heart">
+				<h2>16 845</h2> 
+				<h4>Causes</h4>
+			</div>
+			<div class="achievements__column">
+				<img src="images/earth.png" alt="Earth">
+				<h2>1 549</h2>
+				<h4>Places</h4>
+			</div>
+			<div class="achievements__column">
+				<img src="images/person.png" alt="Person">
+				<h2>5 139</h2>
+				<h4>Volunteers</h4>
+			</div>
+			<div class="achievements__column">
+				<img src="images/people.png" alt="People">
+				<h2>235 375</h2>
+				<h4>Saved</h4>
+			</div>
+		</section>
+
+		<!-- about us -->
+		<section class="aboutUs">
+			<div class="innerWrapper clearfix">
+				<div class="aboutUs__column">
+					<h3>What <span>We Do?</span></h3>
+					<p>Consetetur sadipscing elam nonumy eirmod tempor indunt ulabore dolore magna aliquyam erat sed:</p>
+					<ul>
+						<li><i class="fa fa-circle-o" aria-hidden="true"></i>At vero eos eaccusam justo</li>
+						<li><i class="fa fa-circle-o" aria-hidden="true"></i>Stet clita kasd gubergre timata </li>
+						<li><i class="fa fa-circle-o" aria-hidden="true"></i>Lorem ipsum dorsit amet </li>
+						<li><i class="fa fa-circle-o" aria-hidden="true"></i>Consetetur sadiping</li>
+						<li><i class="fa fa-circle-o" aria-hidden="true"></i>Nonumy eirmod nvlae</li>
+					</ul>
+				</div>
+				<div class="aboutUs__column aboutUs__column--mid">
+					<h3>Why <span>Choose Us?</span></h3>
+					<select>
+						<option value="">vero eoset accusam</option>
+						<option value="">stet clita kasd</option>
+						<option value="">consetetur sadiping</option>
+					</select>
+					<p>At vero eos et accusam ejusto duo dolores ea rebum stet clita kasd gubergreno sea takimata sanctus est lorem.</p>
+					<select>
+						<option value="">vero eoset accusam</option>
+						<option value="">stet clita kasd</option>
+						<option value="">consetetur sadiping</option>
+					</select>
+					<select>
+						<option value="">vero eoset accusam</option>
+						<option value="">stet clita kasd</option>
+						<option value="">consetetur sadiping</option>
+					</select>
+				</div>
+				<div class="aboutUs__column aboutUs__column--image">
+					<img src="images/volunteer.jpg" alt="volunteer image">
+					<div class="aboutUs__columnText">
+						<h2>Wanna be a <span>Volunteer?</span></h2>
+						<button class="button button--white" type="button">Join In</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- get in touch -->
+		<section class="getInTouch">
+			<div class="innerWrapper clearfix">
+				<h2><span>Get</span> In Touch</h2>
+				<div class="getInTouch__wrapper">
+					<!-- top half -->
+					<div class="getInTouch__top">
+						<div class="getInTouch__column">
+							<img src="images/phone.png" alt="Phone">
+							<p>Phone: 8 (800) 695-2684<br>
+							   Fax: 8 (800) 695-4683</p>
+						</div>
+						<div class="getInTouch__column">
+							<img src="images/map.png" alt="Map">
+							<p>	PO Box 97845<br>
+								Santa Monica st. 567, <br>
+								Los Angeles, CA , US
+							</p>
+						</div>
+						<div class="getInTouch__column">
+							<img src="images/mail.png" alt="Mail">
+							<p>support@mercyheart.com</p>
+						</div>
+					</div>
+					<!-- bottom half (white with form) -->
+					<div class="getInTouch__bottom">
+						<div class="getInTouch__contactBox">
+							<div class="getInTouch__contactBox__column">
+								<input class="getInTouch__contactBoxInput getInTouch__contactBoxInput--name" type="text">
+								<input class="getInTouch__contactBoxInput getInTouch__contactBoxInput--mail" type="email">
+								<input class="getInTouch__contactBoxInput getInTouch__contactBoxInput--site" type="text">
+							</div>
+							<div class="getInTouch__contactBox__column">
+								<textarea class="getInTouch__contactBoxInput getInTouch__contactBoxInput--message" type="text"></textarea>
+							</div>
+						</div>
+						<div class="getInTouch__button">
+							<button class="button button--dark button--island" type="button">Send</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<section class="subscribe">
+			<div class="innerWrapper">	
+				<div class="subscribe__block">
+					<div class="subscribe__logo subscribe__logo--white">
+						<span>Mercy</span>
+						<img src="images/logo.png" alt="Mercy Heart logo">
+						<span>Heart</span>
+					</div>
+					<div class="subscribe__form">
+						<input type="email" placeholder="Email address">
+						<button class="button button--white" type="button">Subscribe</button>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<section class="credit">
+			<div class="credit__overlay">
+				<p>&copy; Mercy Heart. Designed with <img src="images/logo.png" alt="heart"> by MW Templates.</p>
+			</div>
+		</section>
+	</footer>
+	<script type="text/javascript">
+	<!--
+	    function toggle_visibility(id) {
+	       var e = document.getElementById(id);
+	       if(e.style.display == 'block') {
+	          e.style.display = 'none';
+	       } else {
+	          e.style.display = 'block';
+	       }
+	    }
+	//-->
+	</script>
+</body>
+</html>

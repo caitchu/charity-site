@@ -1,0 +1,102 @@
+footer {
+	background: linear-gradient(rgba(57, 57, 57, 0.8), rgba(57, 57, 57, 0.8)), url('../images/pattern.png');
+}
+
+.subscribe {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.subscribe__block {
+	max-width: 340px;
+	margin: 0 auto;
+	padding-top: 10%;
+}
+
+.subscribe__logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding-top: 10%;
+	padding-bottom: 2%;
+	margin: 0 auto;
+}
+
+.subscribe__logo--white {
+	width: 100%;
+
+	img { /* heart */
+		max-width: 85px;
+	}
+
+	span:nth-of-type(1) {
+		font-size: 26px;
+		color: $white;
+	}
+
+	span:nth-of-type(2) {
+		font-size: 26px;
+		color: $white;
+	}
+}
+
+.subscribe__form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5px;
+	
+	input {
+		width: 100%;
+		padding: 10px;
+		margin: 30px 0 0 0;
+	}
+
+	button {
+		padding: 10px 30px;
+		margin: 15px 0 70px 0;
+	}
+}
+
+.credit {
+	color: $lightgrey;
+	font-size: 15px;
+
+	p {
+		padding: 2% 0;
+	}
+
+	img {
+		width: 25px;
+	}
+}
+
+.credit__overlay {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+
+/*----- Media Queries -----*/
+
+@media (max-width: 670px) {
+	.subscribe__block {
+	padding-top: 100px;
+	}
+}
+
+@media (max-width: 480px) {
+	.subscribe__logo--white {
+
+		span:nth-of-type(1) {
+			font-size: 22px;
+		}
+
+		span:nth-of-type(2) {
+			font-size: 22px;
+		}
+	}
+}

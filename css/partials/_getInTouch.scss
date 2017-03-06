@@ -1,0 +1,152 @@
+.getInTouch {
+	@include tintedBG('../images/GoogleMapOpaque.png', rgba(255, 255, 255, 0.5))
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.getInTouch__wrapper {
+	position: relative;
+	margin-top: 40px;
+}
+
+.getInTouch__top {
+	display: flex;
+	flex-direction: row;
+
+	p {
+		line-height: 25px;
+		color: $lightgrey;
+	}
+}
+
+.getInTouch__bottom {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	padding: 50px 50px 0 50px;
+	position: relative;
+	top: 50px;
+}
+
+.getInTouch__column {
+	width: 33.3%;
+	float: left;
+	text-align: center;
+}
+
+.getInTouch__contactBox {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.getInTouch__contactBox__column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 50%;
+
+	input {
+		width: 95%;
+		padding: 10px 20px 10px 40px;
+		margin: 5px;
+		border: 1px solid $lightgrey;
+	}
+
+	textarea {
+	border: 1px solid $lightgrey;
+	padding: 10px 20px 10px 40px;
+	margin: 5px;
+	resize: none;
+	}
+}
+
+.getInTouch__contactBoxInput {
+	width: 100%;	
+	background-size: 15px;
+	background-position: 3%;
+	background-repeat: no-repeat;
+}
+
+
+.getInTouch__contactBoxInput--name {	
+	background-image: url('../images/person.png');
+
+}
+
+.getInTouch__contactBoxInput--mail {	
+	background-image: url('../images/mail-small.png');
+}
+
+.getInTouch__contactBoxInput--site {	
+	background-image: url('../images/earth-small.png');
+}
+
+.getInTouch__contactBoxInput--message {	
+	background-image: url('../images/pencil-small.png');
+	height: 100%;
+	background-position: 3% 10px;
+	padding: 0px;
+}
+ 
+.getInTouch__button {
+	width: 100%;
+
+	button {
+		width: 155px;
+		padding: 10px 30px;
+	}
+}
+
+/*----- Media Queries -----*/
+
+@media (max-width: 980px) {
+	.getInTouch__top {
+		p {
+			font-size: 15px;
+		}
+	}
+
+	.getInTouch__contactBox {
+		width: 100%;
+		flex-direction: column;
+		}
+
+	.getInTouch__contactBox__column {
+		width: 100%;
+
+		input {
+			width: 100%;
+			border: 1px solid $lightgrey;
+		}
+
+		textarea {
+			border: 1px solid $lightgrey;
+			height: 100px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.getInTouch__top {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.getInTouch__column {
+	width: 100%;
+	float: none;
+	text-align: center;
+	}
+}
+
+
+@media (max-width: 680px) {
+	.getInTouch__column {
+		width: 300px;
+		padding-top: 20px;
+	}
+}

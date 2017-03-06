@@ -1,0 +1,62 @@
+.getTheme {
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+}
+
+.getTheme__wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.getTheme__text {
+	width: 70%;
+	padding: 10px 0 25px 0;
+
+	p {
+		font-family: $primaryFont;
+		font-size: 1.7rem;
+		font-weight: 200;
+	}
+}
+
+.getTheme__button {
+	width: 30%;
+
+	button {
+		margin: 40px 0 0 0;
+		float: right;
+	}
+}
+
+.innerWrapper__span--red {
+	color: $red;
+	font-weight: 800;
+}
+
+/*----- Media Queries -----*/
+
+@media (max-width: 880px) {
+	.getTheme__wrapper {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.getTheme__text {
+		width: 100%;
+		padding-bottom: 0;
+	}
+
+	.getTheme__button {
+		width: 100%;
+		padding-bottom: 20px;
+
+		button {
+			float: none;
+			margin: 0;
+		}
+	}
+}
+

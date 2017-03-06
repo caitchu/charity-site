@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,300,400,800|Open+Sans:300,800);
+
+@import 'partials/normalize';
+@import 'partials/variables';
+@import 'partials/buttons';
+@import 'partials/header';
+@import 'partials/contribute';
+@import 'partials/urgentCauses';
+@import 'partials/recentCauses';
+@import 'partials/slider';
+@import 'partials/ourBlog';
+@import 'partials/getTheme';
+@import 'partials/achievements';
+@import 'partials/aboutUs';
+@import 'partials/getInTouch';
+@import 'partials/footer';
+
+/* ----- General Global Styles ----- */
+
+body {
+	background-color: $white;
+	color: $white;
+	font-family: $primaryFont;
+}
+
+h1 {
+	font-family: $primaryFont;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 75px;
+}
+
+h2 {
+	font-family: $primaryFont;
+	text-transform: uppercase;
+	font-weight: 200;
+	font-size: 55px;
+}
+
+h3 {
+	font-family: $primaryFont;
+	font-weight: 800;
+	font-size: 1.5rem;
+}
+
+p {
+	font-family: $secondaryFont;
+}
+
+a {
+	text-decoration: none;
+	border: 0;
+}
+
+a:hover {
+	color: $red;
+	border: 0;
+}
+
+/* Global Span */
+
+.title__bold {
+	font-weight: 800;
+}
+
+/* Global Wrapper */
+
+.innerWrapper {
+	@include innerWrapperStyle(transparent);
+
+	h2 { /* title of each section */
+		margin: 10% 0 2% 0;
+	}
+
+	h2 span { /* bold span of each title */ 
+		font-weight: 800;
+	}
+}
+
+
+/*----- Media Queries -----*/
+
+
+@media (max-width: 980px) {
+	h1 {
+	font-size: 60px;
+	padding: 20px;
+	}
+
+	h2 {
+		font-size: 45px;
+	}
+}
+
+@media (max-width: 480px) {
+	h1 {
+	font-size: 50px;
+	padding: 20px;
+	}
+}

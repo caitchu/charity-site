@@ -1,0 +1,38 @@
+.button {
+	background-color: transparent;
+	padding: 10px 40px;
+	text-transform: uppercase;
+	font-family: $primaryFont;
+	font-size: 12px;
+	font-weight: 200;
+	letter-spacing: 3px;
+	margin: 30px;
+}
+
+.button--white {
+	border: 1px solid $white;
+	color: $white;
+}
+
+.button--dark {
+	border: 1px solid $darkgrey;
+	color: $darkgrey;
+}
+
+.button:hover {
+	background-color: $red;
+	border: 1px solid $red;
+	color: white;
+    transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	transition:all 0.3s ease;
+}
+
+/*----- Media Queries -----*/
+
+@media (max-width: 940px) {
+	.button {
+		padding: 10px 25px;
+	}
+}

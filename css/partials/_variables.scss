@@ -1,0 +1,69 @@
+$white: #FFF;
+$red: #de3c2f;
+$blue: #329ed6;
+$lightgrey: #b3b3b3;
+$grey: #4c4c4c;
+$darkgrey: #323232;
+
+$primaryFont: 'Raleway', sans-serif;
+$secondaryFont: 'Open Sans', sans-serif;
+
+/* Fonts */
+
+@mixin ralewayLight($fontSize) {
+	font-size: $fontSize;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+@mixin ralewayBold($fontSize) {
+	font-size: $fontSize;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+@mixin openSansBold($fontSize) {
+	font-size: $fontSize;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+@mixin openSansLight($fontSize) {
+	font-size: $fontSize;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+}
+
+/* Backgrounds */
+
+@mixin tintedBG($bgImage, $rgbaValue) {
+	background: linear-gradient($rgbaValue, $rgbaValue), url($bgImage);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+@mixin gradientBG($bgImage, $rgbaValue, $rgbaValueTwo) {
+	background: linear-gradient(90deg, $rgbaValue, $rgbaValueTwo), url($bgImage);
+	background-size: cover;
+	background-position: center;
+}
+
+
+/* Wrappers */
+
+@mixin innerWrapperStyle($bgColor) {
+	width: 70%;
+	max-width: 1170px;
+	color: $grey;
+	background-color: $bgColor;
+}
+
+@mixin flexItem($justify, $alignDirection) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $alignDirection;
+}
